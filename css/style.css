@@ -1,0 +1,341 @@
+@charset "UTF-8";
+
+html{
+  font-size: 62.5%;
+}
+*, *::before, *::after{
+  box-sizing: border-box;
+}
+.wrapper {
+  position: relative;
+	width: 100%;
+	text-align: center;
+	height: 92%;
+}
+.bg-mask {
+  height: 100%;
+  background: rgba(0,0,0,0.1);
+}
+.header{
+  background: url(../images/colorado-2126991_1280min.jpg) no-repeat center bottom;
+	background-size: cover;
+}
+.header-text{
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+}
+.header-text h1{
+  font-size: 6rem;
+}
+.header-text p{
+  font-size: 3rem;
+}
+.navbar{
+  background-color: #222222;
+  height: 8%;
+  top: 0;
+  left:0;
+  width: 100%;
+  z-index: 2;
+}
+.navbar-nav{
+  padding-right: 90px;
+}
+.nav-item{
+  padding: 0 30px;
+}
+.navbar .navbar-nav li a {
+  font-weight: bold;
+  text-align: center;
+  font-size: 1.7rem;
+  display: block;
+  color: #FFF;
+}
+.custom-hamburger .navbar-toggler-icon{
+  font-size: 2rem;
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+.navbar-brand{
+  color: #FFF;
+  font-size: 1.8rem !important;
+  padding-left: 20px;
+}
+.navbar-brand:hover{
+  color: #FFF;
+}
+#gloval-nav {
+  background: #000;
+  color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 990;
+  text-align: center;
+  display: flex;
+  visibility: hidden;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 29px;
+  opacity: 0;
+  transition: opacity .6s ease, visibility .6s ease;
+}
+#gloval-nav a{
+   color: #fff;
+   text-decoration: none;
+   display: block;
+   margin: 10px 0;
+   text-align: left;
+}
+.open #gloval-nav {
+  visibility: visible;
+  opacity: 1;
+}
+.about{
+  padding:80px 50px;
+  background: #f6f6f6;
+}
+.heading::before,
+.heading::after{
+  content: '';
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left:0;
+  border-bottom: 1px solid #999;
+}
+.heading::after{
+  bottom: 5px;
+}
+.heading{
+  display: inline-block;
+  letter-spacing: 1px;
+  font-size: 4rem;
+  position: relative;
+  padding-bottom: 10px;
+}
+section .inner {
+  max-width: 1380px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+#about .heading{
+  margin-bottom: 60px;
+  color: #222222;
+}
+#about .section-body {
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+}
+#about .section-image {
+}
+#about .section-image a {
+  display: block;
+  border-radius: 50%;
+  padding-top: 50px;
+}
+#about .section-image img {
+  width: 280px;
+  height: 220px;
+  margin: 0 auto;
+  border-radius: 50%;
+  box-shadow: 0 0 25px 0 #d9d9d9;
+}
+#about .section-desc {
+  padding-top: 10px;
+  padding-left: 90px;
+  width: 75%;
+  margin: 0 auto;
+}
+#about .section-desc .section-text p{
+ font-size: 1.8rem;
+}
+#skills{
+  padding:80px 50px;
+  background-color: #222222;
+  position: relative;
+}
+#skills .heading{
+  color: #FFFFFF;
+  margin-bottom: 50px;
+}
+.absolute_transform{
+  background: yellow;
+  position: absolute;
+  top: 50%; 
+  left: 50%; 
+  transform: translateY(-50%) translateX(-50%); 
+  -webkit-transform: translateY(-50%) translateX(-50%);
+}
+.list{
+  width:65%;
+  margin: 0 auto;
+}
+.skillbar {
+  position:relative;
+  display:block;
+  margin:5px 0 15px;
+  background:#222222;
+  height: 20px;
+  border-radius:3px;
+}
+
+.skillbar-bar {
+  height:20px;
+  width:0px;
+  background:#D3D3D3;
+  border-radius:3px;
+  display:inline-block;
+}
+.skill-bar-percent {
+  position:absolute;
+  right:-50px;
+  top:0;
+  font-size:1.8rem;
+  height:30px;
+  line-height:20px;
+  color:#ffffff;
+}
+.list p{
+  color: #FFF;
+  font-size: 2rem;
+  margin-bottom: 0;
+}
+#works{
+  padding:80px 10px;
+  background-color: #DCDCDC;
+}
+#works .heading{
+  margin-bottom:50px;
+}
+#works 
+.swiper-button-prev, .swiper-button-next{
+  color: #EEEEEE !important;
+}
+.swiper-container{
+  margin: 0 auto;
+  max-width: 1300px;
+  text-align: center;
+}
+.swiper-slide img{
+  width: 400px;
+  height: 380px;
+}
+.contact .heading{
+  color: #FFFFFF;
+  margin-bottom: 50px;
+}
+.contact-form{
+  width: 40%;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+.contact{
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left bottom;
+  padding:80px 0 130px;
+  background-color: #222222;
+}
+.contact-form input[type=email], 
+.contact-form input[type=text], 
+.contact-form textarea{
+  display:block;
+  width: 100%;
+  margin-bottom: 15px;
+  font-size: 15px;
+  padding: 5px 0 5px 15px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  background-color: #EEEEEE;
+  outline: none;
+  border-radius: 5px;
+}
+.contact-form textarea{
+  height: 150px;
+}
+.contact-form input[type=submit]{
+  display: block;
+  margin: 40px auto 0;
+  width: 30%;
+  padding: 10px;
+  font-size: 1.5rem;
+  color: #FFF;
+  border: none;
+  border-radius: 5px;
+  background-color: rgba(253,180,90,1);
+}
+.contact-form input[type=submit]:hover{
+  background-color: #FFA500;
+}
+
+#loader-bg {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  background: #000;
+  z-index: 1;
+}
+#loader {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 200px;
+  height: 200px;
+  margin-top: -100px;
+  margin-left: -100px;
+  text-align: center;
+  color: #fff;
+  z-index: 2;
+}
+
+.spinner {
+  margin: 100px auto 0;
+  width: 100px;
+  text-align: center;
+}
+
+.spinner > div {
+  width: 18px;
+  height: 18px;
+  background-color: #333;
+
+  border-radius: 100%;
+  display: inline-block;
+  -webkit-animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+  animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+}
+
+.spinner .bounce1 {
+  -webkit-animation-delay: -0.32s;
+  animation-delay: -0.32s;
+}
+.spinner .bounce2 {
+  -webkit-animation-delay: -0.16s;
+  animation-delay: -0.16s;
+}
+
+@-webkit-keyframes sk-bouncedelay {
+  0%, 80%, 100% { -webkit-transform: scale(0) }
+  40% { -webkit-transform: scale(1.0) }
+}
+
+@keyframes sk-bouncedelay {
+  0%, 80%, 100% { 
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  } 40% { 
+    -webkit-transform: scale(1.0);
+    transform: scale(1.0);
+  }
+}
